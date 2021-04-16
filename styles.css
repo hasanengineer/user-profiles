@@ -131,6 +131,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   display: none;
+  overflow: auto;
   left: -2000px;
 }
 .modal-container .content-wrapper {
@@ -174,6 +175,14 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+.modal-container .content-wrapper #submitData {
+  padding: 5px 16px;
+  background: #fff;
+  border: 1px solid #a7a3a3;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
