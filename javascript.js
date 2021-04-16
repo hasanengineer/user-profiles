@@ -34,6 +34,7 @@ $(document).ready(function() {
     if (!$modal.is(':visible')) {
       // Slide in
       $modal.show().animate({left: 0});
+      document.body.style.overflow = "hidden"
     }
   });
 });
@@ -45,6 +46,7 @@ $(document).ready(function() {
       $modal.animate({left: -($modal.outerWidth() + 10)}, function() {
         $modal.hide();
       });
+      document.body.style.overflow = "auto"
     }
   });
 });
